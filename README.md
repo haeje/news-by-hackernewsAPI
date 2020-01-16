@@ -23,3 +23,7 @@ yarn lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 # news-by-hackernewsAPI
+
+
+해커뉴스 : https://news.ycombinator.com/
+해커뉴스 api : https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md
