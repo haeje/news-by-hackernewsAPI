@@ -1,13 +1,17 @@
 <template>
   <div id="app">
+    <Toolbar/>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-
+import Toolbar from './components/Toolbar.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  components :{
+    Toolbar
+  }
 }
 </script>
 

@@ -3,13 +3,17 @@ import VueRouter from 'vue-router';
 
 import newsView from '../views/news.vue';
 import askView from '../views/ask.vue';
-import jobView from '../views/job.vue';
+import jobView from '../views/jobs.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
     {
-        path : '/',
+        path:'/',
+        redirect : '/news'
+    },
+    {
+        path : '/news',
         component : newsView
     }, 
     {
@@ -17,7 +21,7 @@ const routes = [
         component : askView
     },
     {
-        path : '/job',
+        path : '/jobs',
         component : jobView
     }
 ];
