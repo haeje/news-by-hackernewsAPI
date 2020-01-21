@@ -15,11 +15,8 @@ export default {
     }
   },
   created(){
-    const vm = this;
     fetchJobsList()
-      .then(function(res){
-        vm.jobs = res;
-      })
+      .then((res) =>this.jobs = res)
   }
 }
 </script>

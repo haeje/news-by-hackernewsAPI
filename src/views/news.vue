@@ -16,18 +16,9 @@ export default {
     }
   },
   created(){
-    const vm = this;
-    console.log( '비동기 호출 전 this : ', this )
-
     fetchNewsList()
-    .then(function(res){
-		console.log( '비동기 호출 후 this : ', this )
-      vm.users = res;      
-    })
-    .catch(function(err){
-      console.log(err);
-      
-    })
+    .then((res) => this.users = res)
+    .catch((err)=> console.log(err))
   }
 }
 </script>

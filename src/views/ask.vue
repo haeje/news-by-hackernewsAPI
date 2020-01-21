@@ -15,11 +15,8 @@ export default {
     }
   },
   created(){
-    const vm = this;
     fetchAskList()
-      .then(function(res){
-        vm.ask = res;
-      })
+      .then((res) =>this.ask = res)
   }
 }
 </script>
